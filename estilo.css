@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box; /* Inclui padding e border nas dimensões totais */
+}
+
+body {
+   
+    
+    
+    background: url("https://www.shutterstock.com/image-vector/silhouette-skyline-panorama-city-brasilia-600nw-2438229763.jpg" ) no-repeat center center fixed;
+    
+    
+
+}
+.main-content{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 30px;
+    color: rgb(8, 8, 8);
+    padding: auto;
+    border: 2px #0a0a0a;
+}
+.container {
+    display: flex; /* Usado para alinhar o menu e o conteúdo lado a lado */
+}
+
+.sidebar {
+    width: 225px; /* Largura do menu lateral */
+    background-color: #0a0a0a; /* Cor de fundo do menu */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    height: 100vh; /* Altura total da tela */
+    position: fixed; /* Fixa o menu lateral na tela */
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar h2 {
+    margin-top: 0; /* Remove margem superior do título */
+}
+
+.sidebar ul {
+    list-style-type: disc;
+    padding: 0; /* Remove padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Alinha os itens da lista ao centro */
+  }
+  
+
+.sidebar ul li {
+    margin: 20px 0;
+    align-items: right;
+    
+}
+
+.sidebar ul li a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: color 0.3s; /* Transição suave de cor */
+    font-size: 20px;
+    text-align: right;;
+    
+}
+
+.sidebar ul li a:hover {
+    color: #007BFF; /* Cor do link ao passar o mouse */
+}
+
+.main-content {
+    margin-left: 450px; /* Espaço para o menu lateral */
+    padding: 50px; /* Espaçamento interno */ /* Cor de fundo do conteúdo principal */
+
+    
+}
+
+.logo {
+    width: 100%; /* A logomarca ocupará 100% da largura do contêiner */
+    max-width: 120px; /* Define um limite de largura para a logomarca */
+    margin-left: 30px;
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+    margin-bottom: 15px ; /* Espaçamento abaixo da logomarca */
+    display: flex;
+    
+}
+

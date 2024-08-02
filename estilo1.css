@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box; /* Inclui padding e border nas dimensões totais */
+}
+
+body {
+  margin: 0;
+    
+   
+    
+    
+    background: url("https://media.istockphoto.com/id/1434678780/pt/vetorial/brasilia-brazil-city-skyline-silhouette.jpg?s=612x612&w=0&k=20&c=2IAxIdagzMm6bw0rTtz4nzCNTlM9KJzIEO0wVT9EP6Y=") no-repeat center center fixed;
+
+    
+}
+
+.container {
+    display: flex; /* Usado para alinhar o menu e o conteúdo lado a lado */
+}
+
+.sidebar {
+    width: 40px; /* Largura inicial do menu lateral */
+    background-color: #0a0a0a; /* Cor de fundo do menu */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    height: 100vh; /* Altura total da tela */
+    position: fixed; /* Fixa o menu lateral na tela */
+    transition: width 0.3s; /* Transição suave para a largura */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa a largura */
+}
+
+.sidebar h2 {
+    margin-top: 0; /* Remove margem superior do título */
+}
+
+.sidebar ul {
+    list-style-type: disc; /* Remove os marcadores da lista */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Alinha os itens da lista ao centro */
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    align-items: right;
+}
+
+.sidebar ul li a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: color 0.3s; /* Transição suave de cor */
+    font-size: 20px;
+    text-align: right;
+}
+
+.sidebar ul li a:hover {
+    color: #007BFF; /* Cor do link ao passar o mouse */
+}
+
+.main-content {
+    margin-left: 70px; /* Espaço para o menu lateral contraído */
+    padding: 50px; /* Espaçamento interno */
+    transition: margin-left 0.3s; /* Transição suave para a margem */
+}
+
+.sidebar:hover ~ .main-content {
+    margin-left: 275px; /* Espaço para o menu lateral expandido */
+}
+
+.logo {
+    width: 100%; /* A logomarca ocupará 100% da largura do contêiner */
+    max-width: 120px; /* Define um limite de largura para a logomarca */
+    margin-left: 30px;
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+    margin-bottom: 15px; /* Espaçamento abaixo da logomarca */
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-content{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 20px; 
+  color: rgb(13, 13, 14);
+  padding: auto;
+  border: 2px #0a0a0a;
+}
+
+
+/* Estilizar a tabela como um todo */
+table {
+    border-collapse: collapse; /* remove espaços entre as células */
+    width: 100%; /* tabela ocupa toda a largura do contêiner */
+    border: 1px solid #ddd; /* borda da tabela */
+    overflow-y: auto; /* adiciona uma barra de rolagem vertical */
+    max-width: 800px; /* largura máxima da tabela */
+    right: 600px;
+    top: 15px;
+    margin: 0 auto;
+    margin-left: auto;
+   margin-right: 50px;
+  }
+  
+  /* Estilizar as células de cabeçalho (th) */
+  th {
+    background-color: #f8f6f6e7; /* cor de fundo do cabeçalho */
+    color: #0f0f0f; /* cor do texto do cabeçalho */
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding: 18px; /* espaçamento interno do cabeçalho */
+    border-bottom: 1px solid #ddd; /* borda inferior do cabeçalho */
+    text-align: center; /* alinhamento do texto do cabeçalho */
+    
+  }
+  
+  /* Estilizar as células de dados (td) */
+  td {
+    padding: 10px; /* espaçamento interno das células de dados */
+    border-bottom: 1px solid #ddd; /* borda inferior das células de dados */
+    text-align: center; /* alinhamento do texto das células de dados */
+  }
+  
+  /* Estilizar as bordas das células */
+  table tr td, table tr th {
+    border-right: 1px solid #ddd; /* borda direita das células */
+  }
+  
+  /* Estilizar a primeira coluna */
+  table tr td:first-child, table tr th:first-child {
+    border-left: 1px solid #ddd; /* borda esquerda da primeira coluna */
+  }
+  
+  /* Estilizar a última coluna */
+  table tr td:last-child, table tr th:last-child {
+    border-right: 1px solid #ddd; /* borda direita da última coluna */
+  }
+  
+  /* Estilizar as linhas pares e ímpares */
+  table tr:nth-child(2n),td:nth-child(2n) {
+    width: 300px;
+    background-color: #f9f9f9; /* cor de fundo das linhas pares */
+  }
+  
+  table tr:nth-child(odd) {
+    background-color: #fff; /* cor de fundo das linhas ímpares */
+  }
